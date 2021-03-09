@@ -1,0 +1,215 @@
+body {
+  position: relative;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
+.container-by-js {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
+.do-not-show {
+  display: none;
+}
+
+.players-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-image {
+  width: 100%;
+  border-radius: 50%;
+}
+.winner {
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  z-index: 2;
+}
+
+.loser {
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  z-index: -1;
+}
+.dice {
+  text-align: center;
+  display: inline-block;
+  margin: 15px;
+}
+
+body {
+  background-color: #393e46;
+}
+
+h1 {
+  margin: 30px;
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 4rem;
+  color: #4ecca3;
+}
+label {
+  transform: translateY(-30px);
+  color: #4ecca3;
+  font-size: 1rem;
+}
+
+p,
+figcaption {
+  font-size: 2rem;
+  color: #4ecca3;
+  font-family: "Indie Flower", cursive;
+}
+
+button {
+  font-size: 2rem;
+  color: #4ecca3;
+  border-radius: 6px;
+  background-color: gray;
+  padding: 4px;
+  font-family: "Indie Flower", cursive;
+}
+
+.dice img {
+  width: 100%;
+}
+
+.player-image-caption {
+  transform: translateY(-50px);
+}
+
+@media screen and (max-width: 997px) {
+  .dice {
+    margin: 3px;
+    width: 45%;
+  }
+  body {
+    font-size: 10px;
+  }
+
+  .container-by-js {
+    width: 60%;
+    margin-top: 50vh;
+  }
+  .winner,
+  .loser {
+    position: fixed;
+  }
+  /* h1 {
+    width: 50%;
+  } */
+  .players-image {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container-by-js {
+    width: 60%;
+    margin-top: 60vh;
+  }
+  .players-image {
+    flex-wrap: wrap;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-left: 15px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 2px;
+    border-radius: 3px;
+  }
+}
+
+footer {
+  margin-top: 5%;
+  color: #eeeeee;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+}
+
+/* --------styling result table ----------- */
+/* spacing */
+.display-result {
+  width: 95%;
+  margin: 0 auto;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid #4ecca3;
+  color: #4ecca3;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+thead th:nth-child(1) {
+  width: 15%;
+}
+
+thead th:nth-child(2) {
+  width: 25%;
+}
+
+thead th:nth-child(3) {
+  width: 25%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th,
+td {
+  padding: 5px;
+}
+/*table topograph */
+thead th,
+tfoot th {
+  font-family: "Lobster", cursive;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+/* zebra striping */
+
+tbody tr:nth-child(odd) {
+  background-color: #f0e6ed;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #3b363b;
+}

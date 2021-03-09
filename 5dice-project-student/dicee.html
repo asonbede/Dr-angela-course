@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dicee Game</title>
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Rock+Salt"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="main-container">
+      <div class="players-image">
+        <figure id="figure1">
+          <img
+            class="player-image"
+            src="./images/player1.jpg"
+            alt="player1 image"
+          />
+          <figcaption class="player-image-caption">Player 1</figcaption>
+          <label for="player1-change-image-input"
+            >Change player1 image(PNG,JPG)</label
+          >
+          <input
+            id="player1-change-image-input"
+            style="display: none"
+            type="file"
+            name="image_uploads"
+            accept=".jpg, .jpeg, .png"
+          />
+        </figure>
+        <figure id="figure2">
+          <img
+            class="player-image"
+            src="./images/player2.jpg"
+            alt="player2 image"
+          />
+
+          <figcaption class="player-image-caption">Player 2</figcaption>
+          <label for="player2-change-image-input"
+            >Change player2 image(PNG,JPG)</label
+          >
+          <input
+            id="player2-change-image-input"
+            style="display: none"
+            type="file"
+            name="image_uploads"
+            accept=".jpg, .jpeg, .png"
+          />
+        </figure>
+      </div>
+      <h1>Begin Game by Clicking On Button</h1>
+      <div class="display-result">
+        <!-- <table>
+          <thead>
+            <tr>
+              <th>Game number</th>
+              <th>Player1 Score</th>
+              <th>Player2 Score</th>
+              <th>Winner</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <th>Total Score</th>
+            </tr>
+          </tfoot>
+        </table> -->
+      </div>
+      <div class="dice">
+        <p><button class="player1-button">Player 1</button></p>
+        <img class="img1" src="images/dice6.png" />
+      </div>
+
+      <div class="dice">
+        <p><button class="player2-button">Player 2</button></p>
+        <img class="img2" src="images/dice6.png" />
+      </div>
+      <footer>www 🎲 App Brewery 🎲 com</footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

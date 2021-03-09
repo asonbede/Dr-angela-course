@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <%- include( 'partials/header'); -%>
+    <div class="container">
+      <h1>Compose</h1>
+      <form action="/compose" method="POST">
+        <label for="post-title">Title</label>
+        <div class="form-group">
+          <input
+            type="text"
+            name="postTitle"
+            class="form-control"
+            id="post-title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="form-message">Post</label>
+          <textarea
+            name="postBody"
+            id="form-message"
+            cols="30"
+            rows="5"
+            class="form-control"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">publish</button>
+      </form>
+    </div>
+    <%-include( 'partials/footer'); -%>
+  </body>
+</html>

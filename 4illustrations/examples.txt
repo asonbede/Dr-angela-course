@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Enter character, only 20 characters are allowed</p>
+    <textarea name="" id="mesage" cols="30" rows="10" maxlength="20"></textarea
+    ><br />
+    <output id="output"></output>
+    <script>
+      console.log("okayyyy");
+      const mesageElement = document.querySelector("#mesage");
+      console.log(mesageElement);
+      const outputElement = document.querySelector("#output");
+      mesageElement.addEventListener("keyup", function () {
+        console.log("okayyyy2222");
+        outputElement.textContent = `You have entered  ${
+          mesageElement.value.length
+        } characters, you have ${20 - mesageElement.value.length} left`;
+        // if (mesageElement.value.length >= 20) {
+        //   mesageElement.value = mesageElement.value.slice(0, 21);
+        // }
+      });
+
+//      function fibbocci(n){
+//           let fibbocciContainer=[]
+//           if (n>2){
+//               fibbocciContainer.push(0,1 )
+//               for(let i=3;i<=n;i++){
+//                const lastEle= fibbocciContainer[fibbocciContainer.length-1];
+//                const secondToLastlastEle= fibbocciContainer[fibbocciContainer.length-2];
+//                fibbocciContainer.push(lastEle+secondToLastlastEle)
+//               }
+//               return fibbocciContainer
+
+//           }else if (n===2) {
+//               fibbocciContainer.push(0,1)
+//               return fibbocciContainer
+//           }else if (n===1||n===0){
+//               fibbocciContainer.push(0)
+//               return fibbocciContainer
+//           }
+
+//       }
+//       fibbocci(100)
+
+//  function numberFizzBuzz(number){ 
+//  for(let i=1;i<=number;i++){
+//      if(i%3===0){
+//          console.log("Fizz")
+//     }else if (i%5===0){
+//           console.log("Buzz")
+//      }else if(i%3===0&&i%5===0){
+//         console.log("FizzBuzz")
+//      }else{
+//         console.log(i)
+//      }
+//  }
+//  }
+
+//  numberFizzBuzz(5)
+
+// function whoIsPaying(array){
+//     const randomNumber= Math.floor(Math.random()*array.length);
+//     return `${array[randomNumber]} is going to pay` 
+ 
+//  }
+//  whoIsPaying(["Jack","Hope","Jonathan","Bede"])
+
+//  function beerSong(number){
+//     count=number;
+//      while(count>=1){
+//          console.log(`${count} bottles of bear on the wall,${count} bottles of bear.
+//          Take one down and pass it around, ${count-1} bottles of bear on the wall`);
+//          count--
+
+//      }
+
+
+//  }
+//  beerSong(5)
+
+
+    </script>
+  </body>
+</html>
